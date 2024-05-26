@@ -12,6 +12,7 @@ var owoSpeak = Vencord.Api.MessageEvents.addPreSendListener((_, data) => {
     
     
     var replaceList = {
+        "god":"joe",
         "perfect":"purrfect",
         "lmao":"hehe~",
                 love: "wuv",
