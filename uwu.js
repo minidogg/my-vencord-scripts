@@ -12,6 +12,9 @@ var owoSpeak = Vencord.Api.MessageEvents.addPreSendListener((_, data) => {
     
     
     var replaceList = {
+        "wtf":"what the floof",
+        
+        "fuck":"floof",
         "god":"joe",
         "perfect":"purrfect",
         "lmao":"hehe~",
