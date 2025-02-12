@@ -1,9 +1,9 @@
 try{
-    Vencord.Api.MessageEvents.removePreSendListener(owoSpeak)
+    Vencord.Api.MessageEvents.removeMessagePreSendListener(owoSpeak)
 }catch(err){
     console.warn(err)
 }
-var owoSpeak = Vencord.Api.MessageEvents.addPreSendListener((_, data) => {
+var owoSpeak = Vencord.Api.MessageEvents.addMessagePreSendListener((_, data) => {
     let randInt = (min,max)=>{return Math.floor(Math.random() * (max+1 - min) ) + min;}
     data.content = data.content.toLowerCase()
 
