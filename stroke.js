@@ -1,9 +1,9 @@
 try{
-    Vencord.Api.MessageEvents.removePreSendListener(strokeSpeak)
+    Vencord.Api.MessageEvents.removeMessagePreSendListener(strokeSpeak)
 }catch(err){
     console.warn(err)
 }
-var strokeSpeak = Vencord.Api.MessageEvents.addPreSendListener((_, data) => {
+var strokeSpeak = Vencord.Api.MessageEvents.addMessagePreSendListener((_, data) => {
     let regex = /stroke:([\d-]+)/
     let chars = "`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,.~!@#$%^&*()_+QWERTYUIOPASDFGHJKL:\"ZXCVBNM<>?".split("")
     let randInt = (min,max)=>{return Math.floor(Math.random() * (max+1 - min) ) + min;}
